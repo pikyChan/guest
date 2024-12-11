@@ -23,7 +23,9 @@ function App() {
     <BrowserRouter>
     <Routes>
     <Route path='/test' element={<Test/>}></Route>
-      <Route path='/home' element={<User/>}></Route>
+    <Route path='/login' element={<Login/>}></Route>
+    <Route path='/logout' element={<Logout/>}></Route>
+      <Route path='/' element={<User/>}></Route>
       <Route path='/datatamu' element={<TampilData/>}></Route>
       <Route path="/admin/*" element={<Layout/>}>
         <Route path="dashboard" element={<Home/>} />
@@ -35,10 +37,7 @@ function App() {
         <Route path="addtamu" element={<AddBukutamu/>} />
         <Route path="profile" element={<Profile/>} />
       </Route>
-      <Route path="/" element={<AuthLayout/>}>
-        <Route path="/" element={<Login />} />
-        <Route path="/logout" element={<Logout />} />
-      </Route>
+      
     </Routes>
     </BrowserRouter>
 

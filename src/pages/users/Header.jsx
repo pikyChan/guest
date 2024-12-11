@@ -80,7 +80,7 @@ const Header = () => {
           {/* Login Button with outline */}
           <li className="nav-item d-none d-md-flex">
             <a
-              href="/"
+              href="/login"
               className="btn btn-outline-primary"
               style={{
                 borderRadius: '20px',
@@ -123,7 +123,7 @@ const Header = () => {
           </li>
           <li style={{ padding: '10px 20px' }}>
             <a
-              href="/"
+              href="/login"
               className="btn btn-outline-primary "
               style={{
                 borderRadius: '20px',
